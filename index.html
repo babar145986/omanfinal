@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verify Learner - Responsive Rebuild</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-scale">
+  <svg width="0" height="0" class="hidden-svg" aria-hidden="true" focusable="false">
+    <symbol id="i-search" viewBox="0 0 24 24"><path d="M10.5 18a7.5 7.5 0 1 1 5.303-2.197L22 22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-7 8a7 7 0 0 1 14 0" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm-9-9h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><path d="M9 7V6a3 3 0 0 1 3-3 3 3 0 0 1 3 3v1M4 9h16v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9Zm0 0a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-nationality" viewBox="0 0 24 24"><path d="M6 5v6m0 0H3m3 0h3m6-6v6m0 0h-3m3 0h3M6 19v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-email" viewBox="0 0 24 24"><path d="M4 8a4 4 0 0 1 4-4h8a4 4 0 1 1 0 8h-4a4 4 0 1 0 4 4 4 4 0 1 0 0-8" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-passport" viewBox="0 0 24 24"><path d="M6 4h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 4h12M8.5 14a5 5 0 0 0 7 0M12 9v10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M4 20h16M7 20V7l5-3 5 3v13M9 10h.01M9 13h.01M9 16h.01M15 10h.01M15 13h.01M15 16h.01" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check-ring" viewBox="0 0 24 24"><path d="M16 9l-5.2 6L8 12.5M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-hash" viewBox="0 0 24 24"><path d="M10 3 8 21M16 3l-2 18M4 9h18M2 15h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-issued" viewBox="0 0 24 24"><path d="M9 7a3 3 0 1 1 6 0v4a3 3 0 1 1-6 0V7Zm9 14H6a2 2 0 0 1-2-2v-2a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v2a2 2 0 0 1-2 2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><path d="M12 7v5l3 3M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check-badge" viewBox="0 0 24 24"><path d="m9.5 12 1.7 1.8 3.3-4M12 2l2.5 1.4 2.8-.2 1.2 2.6 2.3 1.7-.7 2.7.7 2.7-2.3 1.7-1.2 2.6-2.8-.2L12 22l-2.5-1.4-2.8.2-1.2-2.6-2.3-1.7.7-2.7-.7-2.7 2.3-1.7 1.2-2.6 2.8.2L12 2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 20V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v2a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3.1 4.2 2 2 0 0 1 5.1 2h2a2 2 0 0 1 2 1.7l.4 2.6a2 2 0 0 1-.6 1.8L7.2 9.8a16 16 0 0 0 7 7l1.7-1.7a2 2 0 0 1 1.8-.6l2.6.4a2 2 0 0 1 1.7 2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 6h16v12H4zM4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="M12 21s7-6.3 7-12a7 7 0 1 0-14 0c0 5.7 7 12 7 12Zm0-9.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M20 11.4A8.4 8.4 0 0 1 7.2 18.5L4 19.5l1-3A8.4 8.4 0 1 1 20 11.4Zm-5-1.1c-.3-.2-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.5.7c-.2.2-.3.2-.6.1-.3-.2-1.1-.4-2.1-1.4-.8-.7-1.3-1.6-1.5-1.9-.2-.3 0-.4.1-.6l.4-.4.2-.4c.1-.1.1-.3 0-.4l-.8-1.8c-.2-.4-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3c-.2.3-.9.9-.9 2.2 0 1.3.9 2.6 1.1 2.7.1.2 1.8 2.9 4.5 4 .6.3 1.1.5 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.1.2-.5.2-1 .1-1.1-.1-.1-.3-.2-.6-.3Z" fill="currentColor"/></symbol>
+    <symbol id="i-headset" viewBox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0v5a2 2 0 0 1-2 2h-2v-7h4M4 13v5a2 2 0 0 0 2 2h2v-7H4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="top-strip desktop-only">
+      <div class="container top-strip-inner">
+        <div class="spacer"></div>
+        <nav class="mini-nav">
+          <a href="#">Join as Candidate or Organization</a>
+          <a href="#">Verify Learner</a>
+          <button class="language-btn" type="button">
+            <svg><use href="#i-globe"></use></svg>
+            <span>English</span>
+            <svg class="chev"><use href="#i-chevron"></use></svg>
+          </button>
+          <a href="#" class="sign-in-btn">Sign In</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="main-header container">
+      <a href="#" class="brand">
+        <img src="images/ola_logo.png" alt="OLA Logo" class="brand-logo">
+      </a>
+
+      <div class="header-center desktop-only">
+        <a href="#licenses" class="assessments-link">Trainings / Assessments</a>
+        <label class="header-search">
+          <svg><use href="#i-search"></use></svg>
+          <input type="text" placeholder="Search Training / Assessment" />
+        </label>
+      </div>
+
+      <div class="header-right desktop-only">
+        <nav class="primary-nav">
+          <a href="#">Home</a>
+          <span class="divider"></span>
+          <a href="#">Governance</a>
+          <span class="divider"></span>
+          <a href="#">Media</a>
+          <span class="divider"></span>
+          <a href="#">Services</a>
+        </nav>
+      </div>
+
+      <button id="menuToggle" class="menu-toggle mobile-only" aria-label="Toggle menu" aria-expanded="false">
+        <svg><use href="#i-menu"></use></svg>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu mobile-only" aria-hidden="true">
+      <div class="mobile-menu-backdrop"></div>
+      <aside class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Menu">
+        <div class="mobile-drawer-head">
+          <h3>Menu</h3>
+          <button id="mobileMenuClose" class="mobile-menu-close" type="button" aria-label="Close menu">×</button>
+        </div>
+        <div class="mobile-drawer-body">
+          <div class="mobile-cta-group">
+            <a href="#" class="mobile-cta mobile-cta-primary">Sign In</a>
+            <a href="#" class="mobile-cta">Join as Candidate or Organization</a>
+            <a href="#" class="mobile-cta">Verify Learner</a>
+            <a href="#licenses" class="mobile-cta">Trainings / Assessments</a>
+          </div>
+
+          <nav class="mobile-link-list">
+            <a href="#"><span>Home</span><span class="mobile-link-arrow">›</span></a>
+            <a href="#"><span>Governance</span><span class="mobile-link-arrow">›</span></a>
+            <a href="#"><span>Media</span><span class="mobile-link-arrow">›</span></a>
+            <a href="#"><span>Services</span><span class="mobile-link-arrow">›</span></a>
+          </nav>
+
+          <div class="mobile-language-row">
+            <button class="language-btn" type="button">
+              <svg><use href="#i-globe"></use></svg>
+              <span>English</span>
+              <svg class="chev"><use href="#i-chevron"></use></svg>
+            </button>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+      <!-- Floating Contact Buttons -->
+<div class="floating-contact">
+  <a href="https://wa.me/96895045596" target="_blank" class="contact-btn whatsapp" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M20.52 3.48A11.86 11.86 0 0 0 12.07 0C5.49 0 .15 5.34.15 11.92c0 2.1.55 4.15 1.59 5.96L0 24l6.29-1.65a11.88 11.88 0 0 0 5.78 1.47h.01c6.58 0 11.92-5.35 11.92-11.93 0-3.18-1.24-6.17-3.48-8.41ZM12.08 21.8h-.01a9.84 9.84 0 0 1-5.02-1.37l-.36-.21-3.73.98 1-3.64-.24-.37a9.83 9.83 0 0 1-1.52-5.27c0-5.43 4.42-9.85 9.86-9.85 2.63 0 5.1 1.02 6.96 2.88a9.8 9.8 0 0 1 2.88 6.97c0 5.43-4.42 9.86-9.84 9.86Zm5.4-7.37c-.3-.15-1.77-.88-2.04-.98-.27-.1-.47-.15-.66.15-.2.3-.76.98-.94 1.18-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.88-.78-1.48-1.75-1.65-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.66-1.6-.9-2.2-.24-.57-.48-.5-.66-.5h-.56c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.08 4.48.71.3 1.27.48 1.7.61.72.23 1.38.2 1.9.12.58-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.18-1.42-.08-.12-.28-.2-.58-.35Z"/>
+    </svg>
+  </a>
+
+  <a href="javascript:void(0)" class="contact-btn support" aria-label="Support">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12 1.75A8.25 8.25 0 0 0 3.75 10v4.25A2.75 2.75 0 0 0 6.5 17h1a1.75 1.75 0 0 0 1.75-1.75v-3.5A1.75 1.75 0 0 0 7.5 10h-1.9A6.4 6.4 0 0 1 12 3.6a6.4 6.4 0 0 1 6.4 6.4h-1.9a1.75 1.75 0 0 0-1.75 1.75v3.5A1.75 1.75 0 0 0 16.5 17h1.9a2.86 2.86 0 0 1-2.65 2h-1a1 1 0 1 0 0 2h1A4.86 4.86 0 0 0 20.6 17 2.75 2.75 0 0 0 22.25 14.25V10A8.25 8.25 0 0 0 12 1.75Z"/>
+    </svg>
+  </a>
+</div>  
+
+  <main>
+    <section class="hero container">
+      <div class="hero-card">
+        <div class="hero-icon-wrap">
+          <div class="hero-icon">
+            <svg><use href="#i-user"></use></svg>
+          </div>
+        </div>
+        <h1>Verify Learner</h1>
+        <p>Search and view user training records by civil number, email, passport, or verification code</p>
+      </div>
+    </section>
+
+    <section class="search-block container">
+      <div class="search-panel">
+        <h2>Search by Civil Number, Email, Passport No, or Verification Code</h2>
+        <div class="search-row">
+          <div class="search-input-wrap">
+            <span class="search-icon"><svg><use href="#i-search"></use></svg></span>
+            <input id="verificationInput" type="text" value="zc2oER" placeholder="Enter code" />
+          </div>
+          <button id="searchBtn" class="search-btn">
+            <svg><use href="#i-search"></use></svg>
+            <span>Search</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="results" class="results-section container">
+      <div class="profile-banner">
+        <div class="profile-avatar-wrap">
+          <div class="profile-avatar">
+            <div class="avatar-photo">
+              <img src="images/user.png">
+            </div>
+          </div>
+          <div class="verified-dot">✓</div>
+        </div>
+        <div class="profile-main">
+          <h2>SAMMAR ABBAS</h2>
+          <p>Verified Profile</p>
+        </div>
+      </div>
+
+      <div class="info-grid">
+        <article class="info-card">
+          <div class="info-icon blue"><svg><use href="#i-briefcase"></use></svg></div>
+          <div>
+            <h3>Civil Number</h3>
+            <p>103970094</p>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <div class="info-icon mint"><svg><use href="#i-nationality"></use></svg></div>
+          <div>
+            <h3>Nationality</h3>
+            <p>Pakistani</p>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <div class="info-icon purple"><svg><use href="#i-email"></use></svg></div>
+          <div>
+            <h3>Email ID</h3>
+            <p>sammarislam965@gmail.com</p>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <div class="info-icon peach"><svg><use href="#i-passport"></use></svg></div>
+          <div>
+            <h3>Passport No</h3>
+            <p>--</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="licenses" class="licenses-section container">
+      <div class="section-head">
+        <div class="section-title-wrap">
+          <div class="section-icon"><svg><use href="#i-check-badge"></use></svg></div>
+          <h2>Licenses</h2>
+        </div>
+        <div class="pill light">1 License</div>
+      </div>
+
+      <article class="license-card">
+        <div class="license-top">
+          <div>
+            <h3>Heavy Vehicle (Articulated) Driver</h3>
+            <p class="subtitle">Tractor Head Driver (Trailer)</p>
+          </div>
+          <div class="pill active"><span class="dot"></span> Active</div>
+        </div>
+
+        <div class="license-grid">
+          <div class="license-item wide">
+            <div class="info-icon blue"><svg><use href="#i-building"></use></svg></div>
+            <div>
+              <h4>Training Provider/Assessment Centre</h4>
+              <p>Safety Cooperation Services SCS</p>
+            </div>
+          </div>
+
+          <div class="license-item">
+            <div class="info-icon yellow"><svg><use href="#i-check-ring"></use></svg></div>
+            <div>
+              <h4>Cr No</h4>
+              <p>1101803</p>
+            </div>
+          </div>
+
+          <div class="license-item">
+            <div class="info-icon purple"><svg><use href="#i-check-ring"></use></svg></div>
+            <div>
+              <h4>Verification No</h4>
+              <p>zc2oER</p>
+            </div>
+          </div>
+
+          <div class="license-item">
+            <div class="info-icon mint"><svg><use href="#i-hash"></use></svg></div>
+            <div>
+              <h4>Sequence No</h4>
+              <p>HVAD1020250040</p>
+            </div>
+          </div>
+
+          <div class="license-item">
+            <div class="info-icon lavender"><svg><use href="#i-issued"></use></svg></div>
+            <div>
+              <h4>Issued Date</h4>
+              <p>26/10/2025</p>
+            </div>
+          </div>
+
+          <div class="license-item">
+            <div class="info-icon peach"><svg><use href="#i-clock"></use></svg></div>
+            <div>
+              <h4>Expiry Date</h4>
+              <p>26/10/2028</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top container">
+      <div class="footer-col footer-brand-col">
+        <a href="#" class="brand footer-brand">
+          <img src="images/ola_logo.png" style="width: 100%;">
+        </a>
+        <p class="footer-tagline">Developing Today's Skills to Shape Tomorrow's Leaders</p>
+        <div class="socials">
+          <a href="#">𝕏</a>
+          <a href="#">in</a>
+          <a href="#">◎</a>
+          <a href="#">▶</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <a href="#">About</a>
+        <a href="#">Our Governance</a>
+        <a href="#">Media Center</a>
+        <a href="#">NOS</a>
+        <a href="#">Contact us</a>
+        <a href="#">FAQ</a>
+        <a href="#">Support</a>
+      </div>
+
+      <div class="footer-col authorities">
+        <h3>Government Authorities</h3>
+        <a href="#">Ministry of Social Development</a>
+        <a href="#">Ministry of Transport, Communications, and Information Technology</a>
+        <a href="#">Ministry of Labor</a>
+        <a href="#">Royal Oman Police</a>
+        <a href="#">Ministry of Higher Education, Research & Innovation</a>
+        <a href="#">Ministry of Education</a>
+      </div>
+
+      <div class="footer-col contact-col">
+        <h3>Contact Info</h3>
+        <div class="contact-item"><svg><use href="#i-map"></use></svg><span>Taminat Complex Building No 55/9, Street No 53, Al Ghubrah St, Muscat</span></div>
+        <div class="contact-item"><svg><use href="#i-phone"></use></svg><a href="tel:+96895045596">+968 95045596</a></div>
+        <div class="contact-item"><svg><use href="#i-mail"></use></svg><a href="mailto:ola@ola.om">ola@ola.om</a></div>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <div class="footer-bottom-left">© 2025 All Rights Reserved.</div>
+      <div class="footer-bottom-center">Powered by SmartGen Technologies</div>
+      <div class="footer-bottom-links">
+        <a href="#">Become A Training Partner</a>
+        <a href="#">Verify Learner</a>
+        <a href="#">Verify Certificate</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  </div>
+</body>
+</html>
